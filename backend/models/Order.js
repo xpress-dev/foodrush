@@ -246,7 +246,7 @@ const orderSchema = new mongoose.Schema(
 orderSchema.index({ customer: 1 });
 orderSchema.index({ restaurant: 1 });
 orderSchema.index({ deliveryPartner: 1 });
-orderSchema.index({ orderNumber: 1 });
+// Note: orderNumber already has unique index, no need to add manually
 orderSchema.index({ orderStatus: 1 });
 orderSchema.index({ paymentStatus: 1 });
 orderSchema.index({ createdAt: -1 });

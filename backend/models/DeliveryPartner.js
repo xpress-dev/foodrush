@@ -334,7 +334,7 @@ const deliveryPartnerSchema = new mongoose.Schema(
 );
 
 // Indexes for better performance
-deliveryPartnerSchema.index({ user: 1 });
+// Note: user already has unique index, no need to add manually
 deliveryPartnerSchema.index({ "availability.isOnline": 1 });
 deliveryPartnerSchema.index({
   "availability.currentLocation.latitude": 1,

@@ -153,7 +153,7 @@ const reviewSchema = new mongoose.Schema(
 reviewSchema.index({ customer: 1 });
 reviewSchema.index({ restaurant: 1 });
 reviewSchema.index({ deliveryPartner: 1 });
-reviewSchema.index({ order: 1 });
+// Note: order field has unique index defined separately below, no need to add manually here
 reviewSchema.index({ "ratings.overall": -1 });
 reviewSchema.index({ createdAt: -1 });
 reviewSchema.index({ restaurant: 1, createdAt: -1 });

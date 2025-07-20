@@ -80,7 +80,7 @@ const userSchema = new mongoose.Schema(
 );
 
 // Indexes for better query performance
-userSchema.index({ email: 1 });
+// Note: email already has unique index, no need to add manually
 userSchema.index({ phoneNumber: 1 });
 userSchema.index({ role: 1 });
 

@@ -33,7 +33,7 @@ const categorySchema = new mongoose.Schema(
 );
 
 // Index for better performance
-categorySchema.index({ name: 1 });
+// Note: name already has unique index, no need to add manually
 categorySchema.index({ isActive: 1, sortOrder: 1 });
 
 export default mongoose.model("Category", categorySchema);
