@@ -1,0 +1,22 @@
+{
+  "name": "foodrush-delivery",
+  "version": "1.0.0",
+  "description": "Foodrush is a food delivery application.",
+  "keywords": [
+    "mern",
+    "food",
+    "delivery"
+  ],
+  "license": "ISC",
+  "author": "xpress-dev",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon backend/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.4"
+  }
+}
